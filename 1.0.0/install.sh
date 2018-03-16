@@ -3,8 +3,11 @@
 #Default runtime variable if none is supplied
 HELLO_WORLD_STATEMENT=${HELLO_WROLD_STATEMENT:='You are lazy since you are using the default and did not specify this variable.'}
 
-echo "You said: "
-echo $HELLO_WORLD_STATEMENT
+PATH="$PATH:/usr/games"
+export pATH
+
+fortune | cowsay -f snowman
+cowsay $HELLO_WORLD_STATMENT"
 
 
 #Self DEstruct
